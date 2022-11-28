@@ -1,0 +1,30 @@
+{
+  "name": "wynd-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "wynd-landing",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.15",
+    "gatsby": "^5.0.0",
+    "gatsby-plugin-emotion": "^8.1.0",
+    "gatsby-plugin-material-ui": "^4.0.2",
+    "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-sass": "^6.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.56.1"
+  }
+}
