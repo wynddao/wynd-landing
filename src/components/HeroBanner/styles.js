@@ -5,10 +5,12 @@ export const styles = {
   },
   heroBackground: {
     position: 'absolute',
-    zIndex: '-1'
+    zIndex: '-1',
+    width: 'auto',
+    left: 0,
+    top: 0
   },
   container: {
-    paddingTop: '85px',
     paddingBottom: '50px',
     height: '640px',
     display: 'flex',
@@ -20,24 +22,7 @@ export const styles = {
   textContainer: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-start',
     justifyContent: 'center'
-  },
-  H1: {
-    fontFamily: "Barlow Bold",
-    fontStyle: "normal",
-    fontWeight: 400,
-    textAlign: "center",
-    color: "white",
-    marginBottom: '16px'
-  },
-  text: {
-    fontFamily: "Lato",
-    fontStyle: "normal",
-    fontWeight: 400,
-    textAlign: "center",
-    color: "white",
-    marginBottom: '40px'
   },
   button: {
     borderRadius: '200px',
@@ -50,7 +35,9 @@ export const styles = {
   },
   druid: {
     position: 'absolute',
-    right: 0
+    right: 0,
+    bottom: 0,
+    width: '60%'
   },
   bottomBorders: {
     borderBottom: '1px solid #31253F',

@@ -9,8 +9,6 @@ export const styles = {
     zIndex: '-1'
   },
   H2: {
-    textAlign: "center",
-    color: "white",
     marginBottom: '62px'
   },
   box: {
@@ -20,18 +18,11 @@ export const styles = {
     borderRadius: '17.6px',
     color: 'white'
   },
-  small: {
-    fontFamily: 'Lato',
-    color: 'rgba(255, 255, 255, 0.6)',
-    fontStyle: 'normal',
-    fontWeight: '500',
-    fontSize: '14px',
-    lineHeight: '150%',
+  text: {
     textTransform: 'uppercase',
-    marginBottom: '7px'
   },
   fact: {
-    fontFamily: "'Barlow'",
+    fontFamily: "Barlow Regular",
     fontStyle: "normal",
     fontWeight: 700,
     fontSize: "70px",

@@ -12,17 +12,43 @@ const HeroBanner = () => {
   return (
     <section style={styles.section}>
       <HeroBackground style={styles.heroBackground} />
-      <Container maxWidth="xl" style={styles.container}>
-        <Box style={styles.textContainer}>
+      <Container maxWidth="lg" style={styles.container} sx={{
+          pt: 16,
+          flexDirection: {
+            xs: 'column',
+            sm: 'row'
+          }
+        }}
+      >
+        <Box style={styles.textContainer} sx={{
+          alignItems: {
+            xs: 'center',
+            sm: 'flex-start'
+          }
+        }}
+      >
           <Typography
             variant="h1"
-            style={styles.H1}
+            sx={{
+              mb: 2
+            }}
           >
             Corsschain DeFi Hub
           </Typography>
 
           <Typography
-            style={styles.text}
+            variant="text"
+            sx={{
+              textAlign: {
+                sm: 'center',
+                sm: 'left'
+              },
+              ml: {
+                xs: 0,
+                sm: 0.5
+              },
+              mb: 5
+            }}
           >
             Swap, earn and build on the leading<br/>decentralized Crosschain DeFi Hub
           </Typography>
@@ -42,7 +68,7 @@ const HeroBanner = () => {
         <HeroDruid style={styles.druid} />
       </Container>
       <Box style={styles.bottomBorders}>
-        <Container maxWidth="xl" style={styles.bottomBordersContainer}></Container>
+        <Container maxWidth="lg" style={styles.bottomBordersContainer}></Container>
       </Box>
     </section>
   );

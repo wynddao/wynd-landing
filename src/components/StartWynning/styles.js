@@ -9,12 +9,9 @@ export const styles = {
     left: '0',
     zIndex: '-1'
   },
-  H1: {
-    color: 'white'
-  },
-  H2: {
-    color: 'white',
-    margin: '16px 0'
+  h3: {
+    textAlign: 'left',
+    marginBottom: '16px'
   },
   small: {
     color: 'rgba(232, 232, 255, 0.8)'
