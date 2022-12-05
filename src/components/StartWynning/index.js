@@ -14,7 +14,7 @@ const StartWynning = () => {
     <section style={styles.section}>
       <Polygon style={styles.bgPolygon} />
       <Container maxWidth="lg">
-        <Grid container justifyContent="space-between" marginBottom="50px" columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid container justifyContent="space-between" marginBottom="50px" columnSpacing={{ xs: 1, md: 2, md: 3 }}>
           <Grid item xs="12" md="auto">
             <Typography
               variant="h2"
@@ -41,7 +41,7 @@ const StartWynning = () => {
         </Grid>
       </Container>
       <Container maxWidth="lg">
-        <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3, lg: 17 }}>
+        <Grid container rowSpacing={4} columnSpacing={{ xs: 1, md: 2, md: 3, lg: 17 }}>
           <Grid item xs={12} md={4} sx={{
             display: 'flex',
             flexDirection: 'column',

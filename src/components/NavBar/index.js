@@ -28,45 +28,45 @@ const NavBar = () => {
         boxShadow: 'none',
         background: {
           xs: 'linear-gradient(0deg, #131222, #131222),linear-gradient(0deg, #31253F, #31253F)',
-          sm: 'rgba(0,0,0,0)'
+          md: 'rgba(0,0,0,0)'
         },
         borderBottom: {
           xs: '1px solid rgba(49, 37, 63, 1)',
-          sm: 'none'
+          md: 'none'
         }
     }}>
       <Container maxWidth="lg" sx={{
         position: 'relative',
         px: {
           xs: 2.5,
-          sm: 6
+          md: 6
         },
         py: {
           xs: trigger? 1 : 2,
-          sm: trigger? 1.5 : 4
+          md: trigger? 1.5 : 4
         }
       }}>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignContent: 'center'}}>
             <LogoGroup style={styles.logoGroup} />
-            <Box sx={{display: { xs: "none", sm: "flex" }}}>
+            <Box sx={{display: { xs: "none", md: "flex" }}}>
               <SocialIcon type="twitter" color="#2F2C71" href="#"/>
               <SocialIcon type="discord" color="#2F2C71" href="#"/>
               <SocialIcon type="telegram" color="#2F2C71" href="#"/>
             </Box>
           </Box>
           <Box>
-            <Button color="primary" style={styles.button} sx={{display: { xs: "none", sm: "inline-flex" }}}>
+            <Button color="primary" style={styles.button} sx={{display: { xs: "none", md: "inline-flex" }}}>
               Documentation
             </Button>
-            <Button variant="outlined" style={styles.button} sx={{mr: {xs:2, sm: 0}}}>
+            <Button variant="outlined" style={styles.button} sx={{mr: {xs:2, md: 0}}}>
               Launch App
             </Button>
             <IconButton
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{display: { xs: "inline-flex", sm: "none" }, pr: {xs: 0, sm: 1}}}
+              sx={{display: { xs: "inline-flex", md: "none" }, pr: {xs: 0, md: 1}}}
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
             >
               <Hamburger/>

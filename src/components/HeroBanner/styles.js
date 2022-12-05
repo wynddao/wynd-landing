@@ -1,23 +1,22 @@
 export const styles = {
   section: {
     position: 'relative',
-    marginBottom: '77px'
   },
-  heroBackground: {
+  heroBackgroundContainer: {
     position: 'absolute',
     zIndex: '-1',
-    width: 'auto',
     left: 0,
-    top: 0
+    top: 0,
+    overflow: 'hidden'
   },
   container: {
     paddingBottom: '50px',
-    height: '640px',
     display: 'flex',
     alignItems: 'center',
     position: 'relative',
     borderLeft: '1px solid #31253F',
-    borderRight: '1px solid #31253F'
+    borderRight: '1px solid #31253F',
+    overflow: 'hidden'
   },
   textContainer: {
     display: 'flex',
@@ -33,14 +32,15 @@ export const styles = {
     marginLeft: '24px',
     marginRight: '24px'
   },
-  druid: {
+  druidContainer: {
     position: 'absolute',
-    right: 0,
-    bottom: 0,
-    width: '60%'
+    bottom: -7,
+    right: 0
+  },
+  druid: {
+    maxWidth: '100%'
   },
   bottomBorders: {
-    borderBottom: '1px solid #31253F',
     borderTop: '1px solid #31253F'
   },
   bottomBordersContainer: {

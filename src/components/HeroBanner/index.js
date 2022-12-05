@@ -11,12 +11,30 @@ import { styles } from './styles';
 const HeroBanner = () => {
   return (
     <section style={styles.section}>
-      <HeroBackground style={styles.heroBackground} />
+      <Box style={styles.heroBackgroundContainer} sx={{
+        height: {
+          xs: '100%',
+          md: 'unset'
+        },
+        width: {
+          xs: '100%',
+        }
+      }}>
+        <HeroBackground style={styles.heroBackground} />
+      </Box>
       <Container maxWidth="lg" style={styles.container} sx={{
-          pt: 16,
+          pt: {
+            xs: 18,
+            sm: 1,
+            md: 16
+          },
           flexDirection: {
             xs: 'column',
             sm: 'row'
+          },
+          height: {
+            xs: '760px',
+            sm: '680px'
           }
         }}
       >
@@ -40,12 +58,12 @@ const HeroBanner = () => {
             variant="text"
             sx={{
               textAlign: {
-                sm: 'center',
-                sm: 'left'
+                xs: 'center',
+                lg: 'left'
               },
               ml: {
                 xs: 0,
-                sm: 0.5
+                lg: 0.5
               },
               mb: 5
             }}
@@ -65,10 +83,35 @@ const HeroBanner = () => {
           </Button>
         </Box>
 
-        <HeroDruid style={styles.druid} />
+        <Box style={styles.druidContainer} sx={{
+            width: {
+              xs: '140%',
+              sm: '60%'
+            },
+            transform: {
+              xs: 'translate(5%, 30%)',
+              sm: 'none'
+            }
+          }}>
+          <HeroDruid style={styles.druid}/>
+        </Box>
       </Container>
-      <Box style={styles.bottomBorders}>
-        <Container maxWidth="lg" style={styles.bottomBordersContainer}></Container>
+      <Box style={styles.bottomBorders} sx={{
+        borderBottom: {
+          xs: 'none',
+          sm: '1px solid #31253F'
+        },
+        mb: {
+          xs: 0,
+          sm: 9
+        }
+      }}>
+        <Container maxWidth="lg" style={styles.bottomBordersContainer} sx={{
+          display: {
+            xs: 'none',
+            md: 'block'
+          }
+        }}/>
       </Box>
     </section>
   );

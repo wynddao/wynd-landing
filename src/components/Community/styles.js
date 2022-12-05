@@ -1,23 +1,24 @@
 export const styles = {
   section: {
     position: 'relative',
-    height: '85vh',
     overflowY: 'hidden',
-    display: 'flex',
-    alignItems: 'center'
+    overflow: 'hidden'
+  },
+  bgLogoContainer: {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    zIndex: -1
   },
   bgLogo: {
-    position: 'absolute',
-    left: '-1%',
-    top: '5%',
-    width: '25%',
-    zIndex: -1
+    maxHeight: '100%'
+  },
+  bgDruidContainer: {
+    zIndex: -1,
+    bottom: '-20%',
+    overflow: 'hidden'
   },
   bgDruid: {
-    position: 'absolute',
-    right: 0,
-    top: '5%',
-    width: '50%',
-    zIndex: -1
+    maxWidth: '100%'
   }
 };
