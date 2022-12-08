@@ -20,13 +20,5 @@ export const styles = {
   },
   text: {
     textTransform: 'uppercase',
-  },
-  fact: {
-    fontFamily: "Barlow Regular",
-    fontStyle: "normal",
-    fontWeight: 700,
-    fontSize: "70px",
-    lineHeight: "84px",
-    letterSpacing: "-0.03em"
   }
 };

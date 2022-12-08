@@ -7,6 +7,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Slide from '@mui/material/Slide';
+import RevealSlide from 'react-reveal/Slide';
 import { styles } from "./styles";
 
 import LogoGroup from '../../assets/logo_group.svg';
@@ -33,7 +35,8 @@ const NavBar = () => {
         borderBottom: {
           xs: '1px solid rgba(49, 37, 63, 1)',
           md: 'none'
-        }
+        },
+        transition: 'height 1s'
     }}>
       <Container maxWidth="lg" sx={{
         position: 'relative',
@@ -48,20 +51,32 @@ const NavBar = () => {
       }}>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignContent: 'center'}}>
-            <LogoGroup style={styles.logoGroup} />
+            <RevealSlide top delay={100} mountOnEnter unmountOnExit>
+              <LogoGroup style={styles.logoGroup} />
+            </RevealSlide>
             <Box sx={{display: { xs: "none", md: "flex" }}}>
-              <SocialIcon type="twitter" color="#2F2C71" href="#"/>
-              <SocialIcon type="discord" color="#2F2C71" href="#"/>
-              <SocialIcon type="telegram" color="#2F2C71" href="#"/>
+              <RevealSlide top delay={200} mountOnEnter unmountOnExit>
+                <SocialIcon type="twitter" color="#2F2C71" href="#"/>
+              </RevealSlide>
+              <RevealSlide top delay={300} mountOnEnter unmountOnExit>
+                <SocialIcon type="discord" color="#2F2C71" href="#"/>
+              </RevealSlide>
+              <RevealSlide top delay={400} mountOnEnter unmountOnExit>
+                <SocialIcon type="telegram" color="#2F2C71" href="#"/>
+              </RevealSlide>
             </Box>
           </Box>
           <Box>
-            <Button color="primary" style={styles.button} sx={{display: { xs: "none", md: "inline-flex" }}}>
-              Documentation
-            </Button>
-            <Button variant="outlined" style={styles.button} sx={{mr: {xs:2, md: 0}}}>
-              Launch App
-            </Button>
+            <Slide direction="down" timeout={1000} style={{transitionDelay: 500}} in={true} mountOnEnter unmountOnExit>
+              <Button color="primary" style={styles.button} sx={{display: { xs: "none", md: "inline-flex" }}}>
+                Documentation
+              </Button>
+            </Slide>
+            <Slide direction="down" timeout={1000} style={{transitionDelay: 600}} in={true} mountOnEnter unmountOnExit>
+              <Button variant="outlined" style={styles.button} sx={{mr: {xs:2, md: 0}}}>
+                Launch App
+              </Button>
+            </Slide>
             <IconButton
               edge="start"
               color="inherit"

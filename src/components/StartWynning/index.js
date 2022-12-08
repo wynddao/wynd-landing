@@ -3,6 +3,8 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Slide';
 import Polygon from '../../assets/polygon_2.svg';
 import Analyze from '../../assets/start_wynning_analyze.svg';
 import Govern from '../../assets/start_wynning_govern.svg';
@@ -15,7 +17,7 @@ const StartWynning = () => {
       <Polygon style={styles.bgPolygon} />
       <Container maxWidth="lg">
         <Grid container justifyContent="space-between" marginBottom="50px" columnSpacing={{ xs: 1, md: 2, md: 3 }}>
-          <Grid item xs="12" md="auto">
+          <Grid item xs={12} md="auto">
             <Typography
               variant="h2"
             >
@@ -50,18 +52,22 @@ const StartWynning = () => {
               md: 'flex-start'
             }
           }}>
-            <Analyze />
-            <Typography
-              variant="h3"
-              style={styles.h3}
-            >
-              Analyze
-            </Typography>
-            <Typography
-              variant="text"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies sed pharetra volutpat ut. Justo aliquam ullamcorper feugiat hendrerit mauris in est.
-            </Typography>
+            <Zoom>
+              <Analyze />
+            </Zoom>
+            <Fade bottom>
+              <Typography
+                variant="h3"
+                style={styles.h3}
+              >
+                Analyze
+              </Typography>
+              <Typography
+                variant="text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies sed pharetra volutpat ut. Justo aliquam ullamcorper feugiat hendrerit mauris in est.
+              </Typography>
+            </Fade>
           </Grid>
           <Grid item xs={12} md={4} sx={{
             display: 'flex',
@@ -71,18 +77,22 @@ const StartWynning = () => {
               md: 'flex-start'
             }
           }}>
-            <Govern />
-            <Typography
-              variant="h3"
-              style={styles.h3}
-            >
-              Govern
-            </Typography>
-            <Typography
-              variant="text"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies sed pharetra volutpat ut. Justo aliquam ullamcorper feugiat hendrerit mauris in est.
-            </Typography>
+            <Zoom delay={200}>
+              <Govern />
+            </Zoom>
+            <Fade bottom delay={200}>
+              <Typography
+                variant="h3"
+                style={styles.h3}
+              >
+                Govern
+              </Typography>
+              <Typography
+                variant="text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies sed pharetra volutpat ut. Justo aliquam ullamcorper feugiat hendrerit mauris in est.
+              </Typography>
+            </Fade>
           </Grid>
           <Grid item xs={12} md={4} sx={{
             display: 'flex',
@@ -92,18 +102,22 @@ const StartWynning = () => {
               md: 'flex-start'
             }
           }}>
-            <Build />
-            <Typography
-              variant="h3"
-              style={styles.h3}
-            >
-              Build
-            </Typography>
-            <Typography
-              variant="text"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies sed pharetra volutpat ut. Justo aliquam ullamcorper feugiat hendrerit mauris in est.
-            </Typography>
+            <Zoom delay={400}>
+              <Build />
+            </Zoom>
+            <Fade bottom delay={400}>
+              <Typography
+                variant="h3"
+                style={styles.h3}
+              >
+                Build
+              </Typography>
+              <Typography
+                variant="text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies sed pharetra volutpat ut. Justo aliquam ullamcorper feugiat hendrerit mauris in est.
+              </Typography>
+            </Fade>
           </Grid>
         </Grid>
       </Container>

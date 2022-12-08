@@ -20,7 +20,7 @@ const Experience = () => {
           The cross chain native DeFi and<br/> ReFi experience
         </Typography>
         <Grid container justifyContent="space-between" rowSpacing={1.5} columnSpacing={{ xs: 1, md: 2, md: 3 }}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} zIndex={1}>
             <Box style={styles.box}>
               <Typography
                 variant="text"
@@ -29,13 +29,13 @@ const Experience = () => {
                 total value locked
               </Typography>
               <Typography
-                style={styles.fact}
+                variant="subtitle1"
               >
                 45M
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} zIndex={1}>
             <Box style={styles.box}>
               <Typography
                 variant="text"
@@ -44,13 +44,13 @@ const Experience = () => {
                 total value locked
               </Typography>
               <Typography
-                style={styles.fact}
+                variant="subtitle1"
               >
                 45M
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} zIndex={1}>
             <Box style={styles.box}>
               <Typography
                 variant="text"
@@ -59,15 +59,27 @@ const Experience = () => {
                 total value locked
               </Typography>
               <Typography
-                style={styles.fact}
+                variant="subtitle1"
               >
                 45M
               </Typography>
             </Box>
           </Grid>
         </Grid>
-        <img style={{maxWidth: '100%', marginTop: '-40px'}} src={AnimatedImage}/>
       </Container>
+      <Box sx={{
+        width: {
+          xs: '200%',
+          md: '100%',
+        },
+        transform: {
+          xs: 'translate(-25%)',
+          md: 'none'
+        },
+        mb: 7
+      }}>
+        <img style={{width: '100%', marginTop: '-40px'}} src={AnimatedImage}/>
+      </Box>
     </section>
   );
 };

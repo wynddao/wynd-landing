@@ -27,8 +27,12 @@ const theme = createTheme({
       fontWeight: 700,
       color: "white",
       textAlign: 'center',
-      fontSize: '64px',
-      lineHeight: '77px'
+      fontSize: '48px',
+      lineHeight: '58px',
+      '@media (min-width:900px)': {
+        fontSize: '4rem',
+        lineHeight: '76px'
+      },
     },
     h2: {
       fontFamily: "Barlow Regular",
@@ -36,8 +40,12 @@ const theme = createTheme({
       fontWeight: 700,
       color: "white",
       textAlign: 'center',
-      fontSize: '50px',
-      lineHeight: '120%'
+      fontSize: '28px',
+      lineHeight: '33.6px',
+      '@media (min-width:900px)': {
+        fontSize: '3.125rem',
+        lineHeight: '120%'
+      },
     },
     h3: {
       fontFamily: "Barlow Regular",
@@ -45,22 +53,59 @@ const theme = createTheme({
       fontWeight: 700,
       color: "white",
       textAlign: 'center',
-      fontSize: '32px',
-      lineHeight: '38px'
+      fontSize: '24px',
+      lineHeight: '28.8px',
+      '@media (min-width:900px)': {
+        fontSize: '2rem',
+        lineHeight: '38px'
+      },
+    },
+    h4: {
+      fontFamily: "Barlow Regular",
+      fontStyle: "normal",
+      fontWeight: 700,
+      color: "white",
+      textAlign: 'center',
+      fontSize: '16px',
+      lineHeight: '18px',
+      '@media (min-width:900px)': {
+        fontSize: '1.25rem',
+        lineHeight: '24px'
+      },
     },
     button: {
       textTransform: 'none',
       fontFamily: "Lato Regular",
-      fontSize: '16px',
-      lineHeight: '24px',
-      fontWeight: '700'
+      fontSize: '14px',
+      lineHeight: '21px',
+      fontWeight: '700',
+      '@media (min-width:900px)': {
+        fontSize: '1rem',
+        lineHeight: '24px'
+      },
     },
     text: {
       fontFamily: 'Lato Regular',
       fontWeight: '500',
-      fontSize: '16px',
-      lineHeight: '150%',
-      color: 'rgba(232, 232, 255, 0.8);'
+      fontSize: '14px',
+      lineHeight: '21px',
+      color: 'rgba(232, 232, 255, 0.8)',
+      '@media (min-width:900px)': {
+        fontSize: '1rem',
+        lineHeight: '150%',
+      },
+    },
+    subtitle1: {
+      fontFamily: "Barlow Regular",
+      fontStyle: "normal",
+      fontWeight: 700,
+      fontSize: "40px",
+      lineHeight: "48px",
+      letterSpacing: "-0.03em",
+      '@media (min-width:900px)': {
+        fontSize: '4.375rem',
+        lineHeight: '84px',
+      },
     }
   },
   components: {

@@ -2,7 +2,8 @@ export const styles = {
   linkBoxWrapper: {
     width: '100%',
     display: 'block',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    transitionDuration: '1s'
   },
   socialIcon: {
     maxWidth: '32px',
@@ -12,7 +13,9 @@ export const styles = {
     border: '2px solid rgba(255, 255, 255, 0.1)',
     boxShadow: '0px 0px 30px rgba(105, 34, 255, 0.6)',
     borderRadius: '200px',
-    display: 'flex'
+    display: 'flex',
+    maxHeight: '103px',
+    overflow: 'hidden'
   },
   iconBox: {
     background: '#543EDA',
