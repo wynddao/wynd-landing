@@ -56,7 +56,7 @@ const Experience = () => {
           style={styles.H2}
           sx={{mt: {xs: 5, sm: 0}}}
         >
-          The cross Chain native DeFi and<br/> ReFi experience
+          The cross chain native DeFi and<br/> ReFi experience
         </Typography>
         <Grid container justifyContent="space-between" rowSpacing={1.5} columnSpacing={{ xs: 1, md: 2, md: 3 }}>
           <Grid item xs={12} sm={4} zIndex={1}>
