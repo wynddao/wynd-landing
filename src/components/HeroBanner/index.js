@@ -72,7 +72,7 @@ const HeroBanner = () => {
                 mb: 5
               }}
             >
-              Swap, earn and build on the leading<br/>decentralized Cross chain DeFi Hub
+              Swap, earn and build on the leading<br/>decentralized Cross Chain DeFi Hub
             </Typography>
           </Slide>
 
