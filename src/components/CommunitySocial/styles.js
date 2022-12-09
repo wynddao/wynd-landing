@@ -15,7 +15,8 @@ export const styles = {
     borderRadius: '200px',
     display: 'flex',
     maxHeight: '103px',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    cursor: 'pointer'
   },
   iconBox: {
     background: '#543EDA',

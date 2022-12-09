@@ -90,7 +90,7 @@ const Community = () => {
             <CommunitySocial type="twitter" head="Twitter" text="Follow the latest Twitter news about the Web3 space and our latest product updates." href="https://twitter.com/wynddao" />
           </Grid>
           <Grid item xs={12} md={5}>
-            <CommunitySocial type="github" head="GitHub" text="Follow our repo on GitHub and stay on top of the latest updates, projects and announcements." href="https://gitihub.com/wynddao" />
+            <CommunitySocial type="github" head="GitHub" text="Follow our repo on GitHub and stay on top of the latest updates, projects and announcements." href="https://github.com/wynddao" />
           </Grid>
           <Grid item xs={12} md={5}>
             <CommunitySocial type="commonwealth" head="CommonWealth" text="Check us out on CommonWealth." href="https://commonwealth.im/wynd-dao/discussions" />

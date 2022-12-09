@@ -28,7 +28,8 @@ const CommunitySocial = (props) => {
             { type === 'commonwealth' && (<IconCommonWealth style={styles.socialIcon} />) }
           </Box>
           <Box my={1.2} sx={{
-            display: isVisible? 'block' : 'none'
+            display: isVisible? 'block' : 'none',
+            pr: 2
           }}>
             <Typography
               variant="h4"
