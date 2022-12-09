@@ -15,7 +15,7 @@ const CommunitySocial = (props) => {
 
   return (
     <Zoom wait={600} onReveal={() => setVisible(true)}>
-      <Link href={href} style={styles.linkBoxWrapper} sx={{
+      <Link href={href} target="_blank" style={styles.linkBoxWrapper} sx={{
           maxWidth: {
             xs: 'unset',
             md: isVisible? '100%' : '103px'

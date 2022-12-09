@@ -68,7 +68,7 @@ const Community = () => {
             <img style={styles.bgDruid} src={CommunityDruid} alt="background_image"/>
         </Box>
       </Slide>
-        <Fade bottom>
+        <Fade when={isVisible} bottom>
           <Typography
             variant="h1"
             mb={2}
@@ -81,19 +81,19 @@ const Community = () => {
             display="block"
             mb={5}
           >
-            Join the discussion on one of our many forums.<br/>
+            Join the discussion on one of our many channels.<br/>
             Learn about WYND community and become an active voice in the space.
           </Typography>
         </Fade>
         <Grid container justifyContent="center" rowSpacing={2.5} columnSpacing={{ xs: 1, md: 2, md: 3 }}>
           <Grid item xs={12} md={5}>
-            <CommunitySocial type="twitter" head="Twitter" text="Follow the latest Twitter news about the Web3 space and our latest product updates." href="#" />
+            <CommunitySocial type="twitter" head="Twitter" text="Follow the latest Twitter news about the Web3 space and our latest product updates." href="https://twitter.com/wynddao" />
           </Grid>
           <Grid item xs={12} md={5}>
-            <CommunitySocial type="github" head="GitHub" text="Follow our repo on GitHub and stay on top of the latest updates, projects and announcements." href="#" />
+            <CommunitySocial type="github" head="GitHub" text="Follow our repo on GitHub and stay on top of the latest updates, projects and announcements." href="https://gitihub.com/wynddao" />
           </Grid>
           <Grid item xs={12} md={5}>
-            <CommunitySocial type="commonwealth" head="CommonWealth" text="Check us out on CommonWealth." href="#" />
+            <CommunitySocial type="commonwealth" head="CommonWealth" text="Check us out on CommonWealth." href="https://commonwealth.im/wynd-dao/discussions" />
           </Grid>
         </Grid>
       </Container>

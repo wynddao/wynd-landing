@@ -56,24 +56,24 @@ const NavBar = () => {
             </RevealSlide>
             <Box sx={{display: { xs: "none", md: "flex" }}}>
               <RevealSlide top delay={200} mountOnEnter unmountOnExit>
-                <SocialIcon type="twitter" color="#2F2C71" href="#"/>
+                <SocialIcon type="twitter" color="#2F2C71" href="https://twitter.com/wynddao"/>
               </RevealSlide>
               <RevealSlide top delay={300} mountOnEnter unmountOnExit>
-                <SocialIcon type="discord" color="#2F2C71" href="#"/>
+                <SocialIcon type="discord" color="#2F2C71" href="https://discord.gg/GAMrnkbmj4"/>
               </RevealSlide>
               <RevealSlide top delay={400} mountOnEnter unmountOnExit>
-                <SocialIcon type="telegram" color="#2F2C71" href="#"/>
+                <SocialIcon type="telegram" color="#2F2C71" href="https://telegram.me/wynd_dao"/>
               </RevealSlide>
             </Box>
           </Box>
           <Box>
             <Slide direction="down" timeout={1000} style={{transitionDelay: 500}} in={true} mountOnEnter unmountOnExit>
-              <Button color="primary" style={styles.button} sx={{display: { xs: "none", md: "inline-flex" }}}>
+              <Button href="https://docs.wynddao.com/" target="_blank" color="primary" style={styles.button} sx={{display: { xs: "none", md: "inline-flex" }}}>
                 Documentation
               </Button>
             </Slide>
             <Slide direction="down" timeout={1000} style={{transitionDelay: 600}} in={true} mountOnEnter unmountOnExit>
-              <Button variant="outlined" style={styles.button} sx={{mr: {xs:2, md: 0}}}>
+              <Button href="https://app.wynddao.com/" target="_blank" variant="outlined" style={styles.button} sx={{mr: {xs:2, md: 0}}}>
                 Launch App
               </Button>
             </Slide>
@@ -94,13 +94,13 @@ const NavBar = () => {
           mx: 2, 
           p: 1
         }}>
-          <Button style={styles.drawerButton} color="primary">
+          <Button href="https://docs.wynddao.com/" target="_blank" style={styles.drawerButton} color="primary">
             Documentation
           </Button>
           <Box sx={{display: 'flex', justifyContent: 'center'}}>
-            <SocialIcon type="twitter" color="#2F2C71" href="#"/>
-            <SocialIcon type="discord" color="#2F2C71" href="#"/>
-            <SocialIcon type="telegram" color="#2F2C71" href="#"/>
+            <SocialIcon type="twitter" color="#2F2C71" href="https://twitter.com/wynddao"/>
+            <SocialIcon type="discord" color="#2F2C71" href="https://discord.gg/GAMrnkbmj4"/>
+            <SocialIcon type="telegram" color="#2F2C71" href="https://telegram.me/wynd_dao"/>
           </Box>
         </Box>
       </Container>

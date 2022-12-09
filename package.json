@@ -14,6 +14,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.29.5",
+    "@cosmjs/crypto": "^0.29.5",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.15",
@@ -22,11 +24,14 @@
     "gatsby-plugin-material-ui": "^4.0.2",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sass": "^6.2.0",
+    "lottie-react": "^2.3.1",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-hook-inview": "^4.5.0",
     "react-reveal": "^1.2.2",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "stream-browserify": "^3.0.0"
   }
 }

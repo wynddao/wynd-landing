@@ -37,9 +37,9 @@ const Footer = () => {
             </Typography>
           </Grid>
           <Grid item>
-            <SocialIcon type="twitter" color="rgba(111, 207, 151, 0.2)" href="#"/>
-            <SocialIcon type="discord" color="rgba(111, 207, 151, 0.2)" href="#"/>
-            <SocialIcon type="telegram" color="rgba(111, 207, 151, 0.2)" href="#"/>
+            <SocialIcon type="twitter" color="rgba(111, 207, 151, 0.2)" href="https://twitter.com/wynddao"/>
+            <SocialIcon type="discord" color="rgba(111, 207, 151, 0.2)" href="https://discord.gg/GAMrnkbmj4"/>
+            <SocialIcon type="telegram" color="rgba(111, 207, 151, 0.2)" href="https://telegram.me/wynd_dao"/>
           </Grid>
         </Grid>
       </Container>

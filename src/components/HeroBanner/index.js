@@ -53,7 +53,7 @@ const HeroBanner = () => {
                 mb: 2
               }}
             >
-              Corsschain DeFi Hub
+              Cross Chain DeFi Hub
             </Typography>
           </Slide>
 
@@ -72,12 +72,12 @@ const HeroBanner = () => {
                 mb: 5
               }}
             >
-              Swap, earn and build on the leading<br/>decentralized Crosschain DeFi Hub
+              Swap, earn and build on the leading<br/>decentralized Cross chain DeFi Hub
             </Typography>
           </Slide>
 
           <Slide direction="right" style={{transitionDelay: 800}} timeout={1000} in={true} mountOnEnter unmountOnExit>
-            <Button variant="contained" type="reset" style={styles.button}>
+            <Button href="https://app.wynddao.com/" target="_blank" variant="contained" type="reset" style={styles.button}>
               <Typography
                 variant="p"
                 style={styles.buttonText}

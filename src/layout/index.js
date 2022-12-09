@@ -29,7 +29,7 @@ const theme = createTheme({
       textAlign: 'center',
       fontSize: '48px',
       lineHeight: '58px',
-      '@media (min-width:900px)': {
+      '@media (min-width:768px)': {
         fontSize: '4rem',
         lineHeight: '76px'
       },
@@ -42,7 +42,7 @@ const theme = createTheme({
       textAlign: 'center',
       fontSize: '28px',
       lineHeight: '33.6px',
-      '@media (min-width:900px)': {
+      '@media (min-width:768px)': {
         fontSize: '3.125rem',
         lineHeight: '120%'
       },
@@ -55,7 +55,7 @@ const theme = createTheme({
       textAlign: 'center',
       fontSize: '24px',
       lineHeight: '28.8px',
-      '@media (min-width:900px)': {
+      '@media (min-width:768px)': {
         fontSize: '2rem',
         lineHeight: '38px'
       },
@@ -68,7 +68,7 @@ const theme = createTheme({
       textAlign: 'center',
       fontSize: '16px',
       lineHeight: '18px',
-      '@media (min-width:900px)': {
+      '@media (min-width:768px)': {
         fontSize: '1.25rem',
         lineHeight: '24px'
       },
@@ -79,7 +79,7 @@ const theme = createTheme({
       fontSize: '14px',
       lineHeight: '21px',
       fontWeight: '700',
-      '@media (min-width:900px)': {
+      '@media (min-width:768px)': {
         fontSize: '1rem',
         lineHeight: '24px'
       },
@@ -90,7 +90,7 @@ const theme = createTheme({
       fontSize: '14px',
       lineHeight: '21px',
       color: 'rgba(232, 232, 255, 0.8)',
-      '@media (min-width:900px)': {
+      '@media (min-width:768px)': {
         fontSize: '1rem',
         lineHeight: '150%',
       },
@@ -102,7 +102,7 @@ const theme = createTheme({
       fontSize: "40px",
       lineHeight: "48px",
       letterSpacing: "-0.03em",
-      '@media (min-width:900px)': {
+      '@media (min-width:768px)': {
         fontSize: '4.375rem',
         lineHeight: '84px',
       },
