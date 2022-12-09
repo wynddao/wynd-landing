@@ -1,7 +1,7 @@
 export const styles = {
   section: {
     position: 'relative',
-    overflow: 'hidden
+    overflow: 'hidden'
   },
   bgPolygon: {
     position: 'absolute',
