@@ -29,7 +29,7 @@ const Experience = () => {
     ],
   });
 
-  const [totalStaked, setTotalStaked] = useState(0);
+  const [totalStaked, setTotalStaked] = useState("-");
 
   useEffect(() => {
     data().then((res) => {
