@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import HeroDruid from '../../assets/hero_druid.svg';
@@ -11,6 +11,12 @@ import RevealSlide from 'react-reveal/Slide';
 import { styles } from './styles';
 
 const HeroBanner = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <section style={styles.section}>
       <Box style={styles.heroBackgroundContainer} sx={{
@@ -46,18 +52,19 @@ const HeroBanner = () => {
             sm: 'flex-start'
           }
         }}>
-          <Slide direction="right" style={{transitionDelay: 200}} timeout={1000} in={true} mountOnEnter unmountOnExit>
+          <Slide direction="right" style={{transitionDelay: 200}} timeout={1000} in={isVisible} mountOnEnter unmountOnExit>
             <Typography
               variant="h1"
               sx={{
-                mb: 2
+                mb: 2,
+                opacity: isVisible? 1 : 0
               }}
             >
               Cross Chain DeFi Hub
             </Typography>
           </Slide>
 
-          <Slide direction="right" style={{transitionDelay: 500}} timeout={1000} in={true} mountOnEnter unmountOnExit>
+          <Slide direction="right" style={{transitionDelay: 500}} timeout={1000} in={isVisible} mountOnEnter unmountOnExit>
             <Typography
               variant="text"
               sx={{
@@ -69,7 +76,8 @@ const HeroBanner = () => {
                   xs: 0,
                   lg: 0.5
                 },
-                mb: 5
+                mb: 5,
+                opacity: isVisible? 1 : 0
               }}
             >
               Swap, earn and build on the leading<br/>decentralized Cross Chain DeFi Hub
@@ -77,7 +85,9 @@ const HeroBanner = () => {
           </Slide>
 
           <Slide direction="right" style={{transitionDelay: 800}} timeout={1000} in={true} mountOnEnter unmountOnExit>
-            <Button href="https://app.wynddao.com/" target="_blank" variant="contained" type="reset" style={styles.button}>
+            <Button href="https://app.wynddao.com/" target="_blank" variant="contained" type="reset" style={styles.button} sx={{
+              opacity: isVisible? 1 : 0
+            }}>
               <Typography
                 variant="p"
                 style={styles.buttonText}
@@ -102,7 +112,9 @@ const HeroBanner = () => {
             }
           }}>
             <RevealSlide right delay={200} mountOnEnter unmountOnExit>
-              <HeroDruid style={styles.druid}/>
+              <HeroDruid style={styles.druid} sx={{
+                opacity: isVisible? 1 : 0
+              }} />
             </RevealSlide>
         </Box>
       </Container>
