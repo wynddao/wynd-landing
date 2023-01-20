@@ -28,7 +28,6 @@ export const styles = {
     padding: '4px'
   },
   buttonText: {
-    color: "#2F2185",
     marginLeft: '24px',
     marginRight: '24px'
   },

@@ -132,7 +132,9 @@ const theme = createTheme({
   spacing: 8
 });
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
+  const {checkDisclaimer, children} = props;
+
   return (
     <>
       <style
@@ -168,7 +170,7 @@ const Layout = ({ children }) => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <GlobalStyles />
-        <NavBar />
+        <NavBar checkDisclaimer={checkDisclaimer} />
         {children}
         <Footer />
       </ThemeProvider>

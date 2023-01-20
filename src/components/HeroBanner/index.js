@@ -10,8 +10,9 @@ import Slide from '@mui/material/Slide';
 import RevealSlide from 'react-reveal/Slide';
 import { styles } from './styles';
 
-const HeroBanner = () => {
+const HeroBanner = (props) => {
   const [isVisible, setIsVisible] = useState(false);
+  const { checkDisclaimer } = props;
 
   useEffect(() => {
     setIsVisible(true);
@@ -85,14 +86,14 @@ const HeroBanner = () => {
           </Slide>
 
           <Slide direction="right" style={{transitionDelay: 800}} timeout={1000} in={true} mountOnEnter unmountOnExit>
-            <Button href="https://app.wynddao.com/" target="_blank" variant="contained" type="reset" style={styles.button} sx={{
+            <Button onClick={checkDisclaimer} variant="contained" type="reset" style={styles.button} sx={{
               opacity: isVisible? 1 : 0
             }}>
               <Typography
                 variant="p"
                 style={styles.buttonText}
               >
-                Launch App
+                Launch DEX
               </Typography>
 
               <ButtonArrow/>

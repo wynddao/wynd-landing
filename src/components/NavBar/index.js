@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { useMediaQuery } from "@mui/material";
+import { ButtonGroup, useMediaQuery } from "@mui/material";
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
@@ -15,7 +15,9 @@ import LogoGroup from '../../assets/logo_group.svg';
 import Hamburger from '../../assets/hamburger.svg';
 import SocialIcon from "../SocialIcon";
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const {checkDisclaimer} = props;
+
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const [isVisible, setIsVisible] = useState(false);
@@ -79,9 +81,29 @@ const NavBar = () => {
               </Button>
             </Slide>
             <Slide direction="down" timeout={1000} style={{transitionDelay: 600}} in={isVisible} mountOnEnter unmountOnExit>
-              <Button href="https://app.wynddao.com/" target="_blank" variant="outlined" style={styles.button} sx={{mr: {xs:2, md: 0}}}>
-                Launch App
-              </Button>
+              <ButtonGroup variant="outlined" aria-label="outlined button group" sx={{mr: {xs:2, md: 0}, display: {xs: 'none', md: 'inline-flex'}}}>
+                <Button href="https://app.wynddao.com/" target="_blank" style={styles.button} sx={{
+                  borderTopRightRadius: {
+                    md: 0
+                  },
+                  borderBottomRightRadius: {
+                    md: 0
+                  }
+                }}>
+                  Governance
+                </Button>
+                <Button onClick={checkDisclaimer} style={styles.button} sx={{
+                  borderLeft: 'none',
+                  borderTopLeftRadius: {
+                    md: 0
+                  },
+                  borderBottomLeftRadius: {
+                    md: 0
+                  }
+                }}>
+                  Launch DEX
+                </Button>
+              </ButtonGroup>
             </Slide>
             <IconButton
               edge="start"
