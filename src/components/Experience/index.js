@@ -111,7 +111,7 @@ const Experience = () => {
 
     const _totalTVL = pricesInUSD.reduce((acc, b) => acc + b, 0);
     const formattedPrice = (_totalTVL / 1000000).toFixed(2);
-    setTotalTVL(formattedPrice + "M");
+    setTotalTVL(formattedPrice + "M $");
   };
 
   return (
