@@ -12,7 +12,7 @@ const IndexPage = () => {
 
   const checkDisclaimer = () => {
     if(localStorage.getItem('disclaimer')) {
-      window.open('https://app.wynddao.com/', '_blank').focus();
+      window.open('https://dex.wynddao.com/', '_blank').focus();
     } else {
       setModalOpen(true);
     }

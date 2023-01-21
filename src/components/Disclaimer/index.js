@@ -40,7 +40,7 @@ const Disclaimer = (props) => {
                     display: 'flex',
                     justifyContent: 'flex-end'
                 }}>
-                    <Button onClick={setLocalStorage} href="https://app.wynddao.com/" target="_blank" variant="contained" type="reset" style={styles.button}>
+                    <Button onClick={setLocalStorage} href="https://dex.wynddao.com/" target="_blank" variant="contained" type="reset" style={styles.button}>
                         <Typography
                             variant="p"
                             style={styles.buttonText}
