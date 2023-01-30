@@ -85,6 +85,16 @@ const Experience = () => {
     const pricesInUSD = Object.keys(allPools).map((poolAddress) => {
       // Loop through pool assets
       const prices = allPools[poolAddress].map((asset) => {
+        // Check if token / native even exists
+        const isThere = asset.hasOwnProperty("token")
+          ? assetList.tokens.find((el) => el.token_address === asset.token)
+          : assetList.tokens.find(
+              (el) =>
+                el.denom === asset.native || el.juno_denom === asset.native
+            );
+        if (!isThere) {
+          return 0;
+        }
         // Check if CW20 Toen
         if (asset.hasOwnProperty("token")) {
           const decimal = assetList.tokens.find(
