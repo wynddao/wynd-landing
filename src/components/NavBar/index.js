@@ -82,25 +82,7 @@ const NavBar = (props) => {
             </Slide>
             <Slide direction="down" timeout={1000} style={{transitionDelay: 600}} in={isVisible} mountOnEnter unmountOnExit>
               <ButtonGroup variant="outlined" aria-label="outlined button group" sx={{mr: {xs:2, md: 0}, display: {xs: 'none', md: 'inline-flex'}}}>
-                <Button href="https://app.wynddao.com/" target="_blank" style={styles.button} sx={{
-                  borderTopRightRadius: {
-                    md: 0
-                  },
-                  borderBottomRightRadius: {
-                    md: 0
-                  }
-                }}>
-                  Governance
-                </Button>
-                <Button onClick={checkDisclaimer} style={styles.button} sx={{
-                  borderLeft: 'none',
-                  borderTopLeftRadius: {
-                    md: 0
-                  },
-                  borderBottomLeftRadius: {
-                    md: 0
-                  }
-                }}>
+                <Button onClick={checkDisclaimer} style={styles.button}>
                   Launch DEX
                 </Button>
               </ButtonGroup>
