@@ -112,7 +112,7 @@ const HeroBanner = (props) => {
               md: 'none'
             }
           }}>
-            <RevealSlide right delay={200} mountOnEnter unmountOnExit>
+            <RevealSlide when={isVisible} right delay={200} mountOnEnter unmountOnExit>
               <HeroDruid style={styles.druid} sx={{
                 opacity: isVisible? 1 : 0
               }} />
