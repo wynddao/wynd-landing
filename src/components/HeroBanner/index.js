@@ -93,7 +93,7 @@ const HeroBanner = (props) => {
                 variant="p"
                 style={styles.buttonText}
               >
-                Launch DEX
+                Launch App
               </Typography>
 
               <ButtonArrow/>
@@ -131,11 +131,27 @@ const HeroBanner = (props) => {
         }
       }}>
         <Container maxWidth="lg" style={styles.bottomBordersContainer} sx={{
-          display: {
-            xs: 'none',
-            md: 'block'
-          }
-        }}/>
+          display: 'flex',
+          alignItems: 'center'
+        }}>
+          <Box sx={{display: 'flex', width: '100%', justifyContent: 'space-around'}}>
+            <Typography
+              variant="h4"
+            >
+              6969 Trees planted
+            </Typography>
+            <Typography
+              variant="h4"
+            >
+              8888 Children fed
+            </Typography>
+            <Typography
+              variant="h4"
+            >
+              72831 Houses built
+            </Typography>
+          </Box>
+        </Container>
       </Box>
     </section>
   );
