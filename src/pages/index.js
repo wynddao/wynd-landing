@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import Seo from "../components/Seo";
 import HeroBanner from "../components/HeroBanner";
+import Counter from "../components/Counter";
 import Experience from "../components/Experience";
 import Layout from "../layout";
 import StartWynning from "../components/StartWynning";
@@ -12,7 +13,7 @@ const IndexPage = () => {
 
   const checkDisclaimer = () => {
     if(localStorage.getItem('disclaimer')) {
-      window.open('https://dex.wynddao.com/', '_blank').focus();
+      window.open('https://app.wynddao.com/', '_blank').focus();
     } else {
       setModalOpen(true);
     }
@@ -23,6 +24,7 @@ const IndexPage = () => {
       <Seo />
       <Layout checkDisclaimer={checkDisclaimer}>
         <HeroBanner checkDisclaimer={checkDisclaimer} />
+        <Counter />
         <Experience />
         <StartWynning />
         <Community />

@@ -18,6 +18,31 @@ export const styles = {
     borderRight: '1px solid #31253F',
     overflow: 'hidden'
   },
+  treesContainer: {
+    overflow: 'hidden',
+    position: 'absolute',
+    zIndex: '-1',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%'
+  },
+  treesContainerInner: {
+    position: 'relative',
+    width: '100%',
+    height: '100%'
+  },
+  trees: {
+    height: '100%'
+  },
+  treesBG: {
+    backgroundImage: 'linear-gradient(to top, rgba(245, 246, 252, 0.20), rgba(57,53,112, 0.9))',
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    top: 0,
+    left: 0
+  },
   textContainer: {
     display: 'flex',
     flexDirection: 'column',

@@ -75,17 +75,10 @@ const NavBar = (props) => {
             </Box>
           </Box>
           <Box>
-            <Slide direction="down" timeout={1000} style={{transitionDelay: 500}} in={isVisible} mountOnEnter unmountOnExit>
-              <Button href="https://docs.wynddao.com/" target="_blank" color="primary" style={styles.button} sx={{display: { xs: "none", md: "inline-flex" }}}>
-                Documentation
-              </Button>
-            </Slide>
             <Slide direction="down" timeout={1000} style={{transitionDelay: 600}} in={isVisible} mountOnEnter unmountOnExit>
-              <ButtonGroup variant="outlined" aria-label="outlined button group" sx={{mr: {xs:2, md: 0}, display: {xs: 'none', md: 'inline-flex'}}}>
-                <Button onClick={checkDisclaimer} style={styles.button}>
-                  Launch DEX
-                </Button>
-              </ButtonGroup>
+              <Button variant="outlined" onClick={checkDisclaimer} style={styles.button} sx={{mr: {xs:2, md: 0}, display: {xs: 'none', md: 'inline-flex'}}}>
+                Launch App
+              </Button>
             </Slide>
             <IconButton
               edge="start"

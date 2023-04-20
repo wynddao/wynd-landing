@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Slide from '@mui/material/Slide';
 import RevealSlide from 'react-reveal/Slide';
 import { styles } from './styles';
+import trees from './trees.jpg';
 
 const HeroBanner = (props) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,6 +48,14 @@ const HeroBanner = (props) => {
           }
         }}
       >
+        <Box style={styles.treesContainer}>
+          <Box style={styles.treesContainerInner}>
+            <Box style={styles.treesBG}></Box>
+            <Box style={styles.treesImageContainer}>
+             <img src={trees} style={styles.trees} />
+            </Box>
+          </Box>
+        </Box>
         <Box style={styles.textContainer} sx={{
           alignItems: {
             xs: 'center',
@@ -93,7 +102,7 @@ const HeroBanner = (props) => {
                 variant="p"
                 style={styles.buttonText}
               >
-                Launch DEX
+                Launch App
               </Typography>
 
               <ButtonArrow/>
@@ -130,12 +139,7 @@ const HeroBanner = (props) => {
           sm: 9
         }
       }}>
-        <Container maxWidth="lg" style={styles.bottomBordersContainer} sx={{
-          display: {
-            xs: 'none',
-            md: 'block'
-          }
-        }}/>
+        <Container maxWidth="lg" style={styles.bottomBordersContainer}></Container>
       </Box>
     </section>
   );
