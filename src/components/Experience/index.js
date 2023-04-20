@@ -45,6 +45,10 @@ const Experience = () => {
     const rpcEndpoint = "https://rpc-juno-wynd.mib.tech/";
     const client = await CosmWasmClient.connect(rpcEndpoint);
 
+    let lsd = await client.queryContractSmart('juno1snv8z7j75jwfce4uhkjh5fedpxjnrx9v20ffflzws57atshr79yqnw032r', {
+      supply: {}
+    });
+
     const contractAddress =
       "juno1sy9mlw47w44f94zea7g98y5ff4cvtc8rfv75jgwphlet83wlf4ssa050mv";
     return await client.queryContractSmart(contractAddress, {
@@ -62,6 +66,9 @@ const Experience = () => {
     const wyndTokenAddress =
       "juno1mkw83sv6c7sjdvsaplrzc8yaes9l42p4mhy0ssuxjnyzl87c9eps7ce3m9";
 
+    const denom = 
+      "ujuno";
+
     // Fetch API to get all tokens
     const allPrices = await (
       await fetch("https://api.wynddao.com/assets/prices")
@@ -71,6 +78,20 @@ const Experience = () => {
     const _wyndPrice = allPrices.find(
       (el) => el.asset == wyndTokenAddress
     )?.priceInUsd;
+
+    
+    const _junoPrice = allPrices.find(
+      (el) => el.asset == denom
+    )?.priceInUsd;
+
+    const rpcEndpoint = "https://rpc-juno-wynd.mib.tech/";
+    const client = await CosmWasmClient.connect(rpcEndpoint);
+
+    let lsd = await client.queryContractSmart('juno1snv8z7j75jwfce4uhkjh5fedpxjnrx9v20ffflzws57atshr79yqnw032r', {
+      supply: {}
+    });
+
+    const _lsd = lsd.supply.total_bonded * _junoPrice / 10 ** 6;
 
     // Format and set WYND price to show on the page
     const formatedUSDPrice = formatCurrencyStatic.format(_wyndPrice);
@@ -119,7 +140,8 @@ const Experience = () => {
       return Number(prices[0]) + Number(prices[1]);
     });
 
-    const _totalTVL = pricesInUSD.reduce((acc, b) => acc + b, 0);
+    let _totalTVL = pricesInUSD.reduce((acc, b) => acc + b, 0);
+    _totalTVL += _lsd;
     const formattedPrice = (_totalTVL / 1000000).toFixed(2);
     setTotalTVL(formattedPrice + "M $");
   };

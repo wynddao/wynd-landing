@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Slide from '@mui/material/Slide';
 import RevealSlide from 'react-reveal/Slide';
 import { styles } from './styles';
+import trees from './trees.jpg';
 
 const HeroBanner = (props) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,6 +48,14 @@ const HeroBanner = (props) => {
           }
         }}
       >
+        <Box style={styles.treesContainer}>
+          <Box style={styles.treesContainerInner}>
+            <Box style={styles.treesBG}></Box>
+            <Box style={styles.treesImageContainer}>
+             <img src={trees} style={styles.trees} />
+            </Box>
+          </Box>
+        </Box>
         <Box style={styles.textContainer} sx={{
           alignItems: {
             xs: 'center',
@@ -130,28 +139,7 @@ const HeroBanner = (props) => {
           sm: 9
         }
       }}>
-        <Container maxWidth="lg" style={styles.bottomBordersContainer} sx={{
-          display: 'flex',
-          alignItems: 'center'
-        }}>
-          <Box sx={{display: 'flex', width: '100%', justifyContent: 'space-around'}}>
-            <Typography
-              variant="h4"
-            >
-              6969 Trees planted
-            </Typography>
-            <Typography
-              variant="h4"
-            >
-              8888 Children fed
-            </Typography>
-            <Typography
-              variant="h4"
-            >
-              72831 Houses built
-            </Typography>
-          </Box>
-        </Container>
+        <Container maxWidth="lg" style={styles.bottomBordersContainer}></Container>
       </Box>
     </section>
   );
