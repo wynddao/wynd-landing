@@ -9,7 +9,6 @@ import Button from '@mui/material/Button';
 import Slide from '@mui/material/Slide';
 import RevealSlide from 'react-reveal/Slide';
 import { styles } from './styles';
-import trees from './trees.jpg';
 
 const HeroBanner = (props) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -48,21 +47,13 @@ const HeroBanner = (props) => {
           }
         }}
       >
-        <Box style={styles.treesContainer}>
-          <Box style={styles.treesContainerInner}>
-            <Box style={styles.treesBG}></Box>
-            <Box style={styles.treesImageContainer}>
-             <img src={trees} style={styles.trees} />
-            </Box>
-          </Box>
-        </Box>
         <Box style={styles.textContainer} sx={{
           alignItems: {
             xs: 'center',
             sm: 'flex-start'
           }
         }}>
-          <Slide direction="right" style={{transitionDelay: 200}} timeout={1000} in={isVisible} mountOnEnter unmountOnExit>
+          <Slide when={true} bottom delay={200}>
             <Typography
               variant="h1"
               sx={{
@@ -135,8 +126,7 @@ const HeroBanner = (props) => {
           sm: '1px solid #31253F'
         },
         mb: {
-          xs: 0,
-          sm: 9
+          xs: 0
         }
       }}>
         <Container maxWidth="lg" style={styles.bottomBordersContainer}></Container>
